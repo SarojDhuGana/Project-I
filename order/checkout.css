@@ -1,0 +1,206 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+    transform: scale(1.5);
+    /* Increase checkbox size */
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.paymentMethod {
+    margin-top: 20px;
+}
+
+.paymentMethod label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cashOndelivery label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.disabled-button {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    /* Add border to all sides of table cells */
+    padding: 10px;
+    text-align: left;
+}
+
+.quantity-input {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.quantity-input input {
+    position: relative;
+    top: 7px;
+}
+
+.decrementButton,
+.incrementButton {
+    flex: 0 0 30px;
+    /* Set fixed width for buttons */
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.cartValue {
+    /* flex: 1; */
+    /* Take remaining space */
+    height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ellipsis {
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    /* height: auto; */
+    /* Adjust the width as needed */
+    display: inline-block;
+}
+
+.orderedQuantity {
+    text-align: center;
+}
+
+
+/* Default max-width for larger screens */
+.product-name {
+    max-width: 200px;
+    /* Adjust as needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .quantity-input {
+        margin-top: -13px;
+    }
+
+    .ellipsis {
+        height: 133px;
+    }
+
+    .product-name {
+        max-width: 100px;
+        /* Adjust as needed */
+    }
+
+    .quantity-input {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+}
+
+@media (max-width: 480px) {
+    .product-name {
+        max-width: 70px;
+        /* Adjust as needed */
+    }
+}
+
+.decrementButton {
+    margin-right: 5px;
+    /* Add margin between decrement button and value box */
+}
+
+.incrementButton {
+    margin-left: 5px;
+    /* Add margin between increment button and value box */
+}
+
+.paymentMethod {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cashOndelivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cashOndelivery label {
+    width: 50%;
+}
+
+.cashOndelivery input[type="checkbox"] {
+    /* margin-right: 5px; */
+    height: 15px;
+    /* Add some spacing between the checkbox and text */
+}

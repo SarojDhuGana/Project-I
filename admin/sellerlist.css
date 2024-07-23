@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    /* //....... Color ........// */
+    --primary-color: orange;
+    --light-black: rgba(0, 0, 0, 0.89);
+    --black: #000;
+    --white: #fff;
+    --grey: #aaa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    /* background: pink; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.container .search-div .search-form {
+    border: 1px soldi black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    padding-left: 6px;
+    text-align: left;
+}
+
+.action a {
+    text-decoration: none;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.action a:hover {
+    text-decoration: wavy;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+}
+
+.checkBox {
+    margin-left: 20px;
+    padding-right: 20;
+}
+
+.label-check {
+    padding-right: 20px;
+}
+
+.heading label {
+    justify-content: start;
+}
+
+
+
+input[type="text"] {
+    padding: 10px;
+    padding-left: 20px;
+    margin: 10px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="search"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}

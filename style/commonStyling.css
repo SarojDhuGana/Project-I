@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;900&display=swap');
+
+* {
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: var(--secondary-color);
+    box-sizing: border-box;
+    transition: .3s linear ease-in-out;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --prim1-color: purple;
+    --sec1-color: rgb(25, 85, 105);
+    --orange: orange;
+    --dark-green: green;
+    --gray: gray;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+}

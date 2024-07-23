@@ -1,0 +1,418 @@
+/* ************* styling for bdashboard nav bar *************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    font-size: 20px;
+    align-items: center;
+}
+
+
+/* Start nav bar for categoies */
+.navbar {
+    display: flex;
+    align-items: center;
+    /* padding: 10px;    */
+}
+
+.navbar label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.navbar select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar select option {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.navbar form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.navbar input[type="text"]:focus {
+    outline: blue 0.5px solid;
+
+}
+
+.search-history {
+    display: none;
+}
+
+.clear-history {
+    display: none;
+}
+
+/* End nav bar drop down for categories */
+.mainNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.nav-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+}
+
+.nav-items li {
+    /* background-color: transparent; */
+    /* box-shadow: none; */
+    font-size: 18px;
+    padding-top: 9px;
+    padding-left: 20px;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    /* transition: background-color 0.2s ease; */
+}
+
+.nav-link:hover {
+    background-color: #e0e0e0;/
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+select,
+input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.search-history {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    right: 0;
+    width: 50%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.search-history-item {
+    flex: 1;
+    padding: 5px;
+    background-color: #f0f0f0;
+    /* Background color for each search item */
+    border-radius: 5px;
+
+}
+
+.crossIcon {
+    cursor: pointer;
+    color: red;
+    /* Color of the cancel icon */
+    margin-left: 5px;
+    /* Add some space between the search term and the cancel icon */
+}
+
+
+.clear-history:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .navContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mainNav {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-item {
+        margin: 0;
+        padding: 0.5rem 0;
+    }
+
+    .mainNav.show {
+        display: block;
+    }
+}
+
+
+
+
+
+
+/* *************** styling for bdashboard product details  **************** */
+.title {
+    font-size: 25px;
+}
+
+.categories {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.category {
+    position: relative;
+    left: 20%;
+    /* background-color: #f2f2f2; */
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    /* width: 20%; */
+    text-align: center;
+
+}
+
+
+.dashboardCategoryList {
+    /* border: solid 1px grey; */
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    padding: 5px;
+    display: block;
+    transition-duration: 0.3s;
+    /* Transition duration for smooth effect */
+    box-shadow: none;
+
+}
+
+/* Add box shadow when hovering over the button */
+.dashboardCategoryList:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Box shadow effect */
+}
+
+.category ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category ul li {
+    /* padding: 5px 0; */
+    width: 80%;
+}
+
+
+/*  for products list */
+.category-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+.category-box b {
+    color: black;
+    font-size: 22px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-top: 12px;
+}
+
+.productName {
+    white-space: nowrap;
+    /* Prevents the text from wrapping */
+    overflow: hidden;
+    /* Hides the overflowing text */
+    text-overflow: ellipsis;
+    /* Adds ellipsis when text overflows */
+    width: 200px;
+    /* Set a fixed width (adjust as needed) */
+}
+
+h2 {
+    color: white;
+}
+
+.category-container>.category-box {
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-size: 28px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 5px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-heading>h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#img {
+    width: 280px;
+    height: 230px;
+    display: flex;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+}
+
+.catagory-btn {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background: black;
+    border: none;
+    color: white;
+}
+
+.catagory-btn:hover {
+    color: black;
+    background: orange;
+}
+
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+.product button:hover {
+    background-color: #45a049;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+    .categories {
+        width: 70%;
+        display: block;
+        flex-direction: column;
+    }
+
+
+    .category {
+        text-align: center;
+        width: auto;
+    }
+
+    .featured {
+        flex-direction: column;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+}
+
+li {
+    list-style: none;
+}

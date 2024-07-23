@@ -1,0 +1,194 @@
+.navigationBarCart {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.mainContainer {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px 15px;
+    position: relative;
+    justify-content: center;
+
+}
+
+.product {
+    display: flex;
+    float: left;
+    margin: 4px 4px;
+}
+
+.productDetail {
+    max-width: 380px;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-top: 4px;
+
+}
+
+.productDetail .checkBoxClass {
+    border: 0.5px solid gray;
+    max-width: 250px;
+    max-height: 40vh;
+    padding: 6px 6px;
+    margin: 5px 2px;
+    margin-right: 2px;
+}
+
+.productDetail .checkBoxClass img {
+    height: 34vh;
+    max-width: 100%;
+}
+
+.priceWrapper {
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ellipsis {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.deleteCheckboxBtn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    /* font-size: 15px; */
+}
+
+.deleteCheckboxBtn input.checkbox {
+    width: 15px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+.order-now-btn {
+    background-color: #4CAF50;
+}
+
+.add-to-cart-btn,
+.order-now-btn {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ffcd38;
+}
+
+.order-now-btn:hover {
+    background-color: #45a049;
+}
+
+button[type="button"] {
+    /* background-color: rgb(225, 38, 38); */
+    /* background-color: grey; */
+    /* color: white; */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.checked {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.confirmation-dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-dialog-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.confirmation-buttons button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* for success message */
+.message-container {
+    height: 30px;
+    /* Fixed height for the message */
+    margin-bottom: 20px;
+    /* Margin to separate from other content */
+}
+
+.message {
+    font-size: 16px;
+    margin: 20px 0;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    /* Center the text vertically */
+}
+
+.message.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.message.success {
+    color: green;
+}
+
+.message.error {
+    color: red;
+}
+
+.navbar {
+    display: none;
+}
